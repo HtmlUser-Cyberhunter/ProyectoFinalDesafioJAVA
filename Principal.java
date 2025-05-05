@@ -17,7 +17,8 @@ public class Principal {
             System.out.println("4.- Real brasileño → Dólar");
             System.out.println("5.- Dólar → Peso colombiano");
             System.out.println("6.- Peso colombiano → Dólar");
-            System.out.println("7.- Salir");
+            System.out.println("7.- Ingresar monedas manualmente");
+            System.out.println("8.- Salir");
             System.out.println("***********************************************************");
             System.out.println("***********************************************************");
             System.out.print("Opción: ");
@@ -27,13 +28,37 @@ public class Principal {
             String cambio = "";
 
             switch (opcion) {
-                case 1 -> { base = "USD"; cambio = "ARS"; }
-                case 2 -> { base = "ARS"; cambio = "USD"; }
-                case 3 -> { base = "USD"; cambio = "BRL"; }
-                case 4 -> { base = "BRL"; cambio = "USD"; }
-                case 5 -> { base = "USD"; cambio = "COP"; }
-                case 6 -> { base = "COP"; cambio = "USD"; }
+                case 1 -> {
+                    base = "USD";
+                    cambio = "ARS";
+                }
+                case 2 -> {
+                    base = "ARS";
+                    cambio = "USD";
+                }
+                case 3 -> {
+                    base = "USD";
+                    cambio = "BRL";
+                }
+                case 4 -> {
+                    base = "BRL";
+                    cambio = "USD";
+                }
+                case 5 -> {
+                    base = "USD";
+                    cambio = "COP";
+                }
+                case 6 -> {
+                    base = "COP";
+                    cambio = "USD";
+                }
                 case 7 -> {
+                    System.out.print("Ingrese el código de la moneda base (por ejemplo, USD): ");
+                    base = lectura.nextLine().trim().toUpperCase();
+                    System.out.print("Ingrese el código de la moneda destino (por ejemplo, EUR): ");
+                    cambio = lectura.nextLine().trim().toUpperCase();
+                }
+                case 8 -> {
                     continuar = false;
                     System.out.println("Gracias por utilizar el conversor de monedas");
                     continue;
@@ -61,7 +86,7 @@ public class Principal {
                     //imprime cantidad base son resultado cambio (ej: 1$ son 1172 ARS)
                     System.out.println();
                 } else {
-                    System.out.println("Moneda cambio no encontrada.");
+                    System.out.println("Moneda no encontrada.");
                 }
             } catch (RuntimeException e) {
                 System.out.println("Error al obtener tasas de cambio: " + e.getMessage());
