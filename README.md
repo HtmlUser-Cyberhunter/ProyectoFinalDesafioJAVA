@@ -1,5 +1,6 @@
 Esta es la versión final. Mejorado luego de que estuviera limitado a algunas monedas. Se agregan el resto de las monedas, sin embargo el usuario debe seleccionar las monedas de cambio
 seleccionando los tipos de moneda segun el listado. Recordar que las referencias de precios de monedas en la API están relacionadas al Dolar (USD)
+
 ![image](https://github.com/user-attachments/assets/250eca98-0796-4fc1-bdde-2294ceae0c83)
 
    "USD"
