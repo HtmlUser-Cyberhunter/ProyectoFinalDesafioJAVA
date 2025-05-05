@@ -2,9 +2,9 @@ Esta es la versión final. Mejorado luego de que estuviera limitado a algunas mo
 seleccionando los tipos de moneda segun el listado
 ![image](https://github.com/user-attachments/assets/250eca98-0796-4fc1-bdde-2294ceae0c83)
 
-  "USD"
-  "AED"
-  "AFN"
+        "USD"
+        "AED"
+        "AFN"
         "ALL"
         "AMD"
         "ANG"
