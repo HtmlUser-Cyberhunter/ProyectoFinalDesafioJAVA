@@ -1,5 +1,8 @@
-Este es el proyecto final del curso de Backend de JAVA en Alura Latam. La pantalla principal es como se muestra
-![image](https://github.com/user-attachments/assets/c19a1a69-0d28-4275-8947-dbe01b134297)
+En esta actualizacion se agrega la opcion de guardar un historial de cambios a traves de un archivo txt
+![image](https://github.com/user-attachments/assets/58a9275e-5256-4bc4-a0c7-41913be117ee)
 
-La conversion de moneda se hace realizando el cambio de dolares a moneda local y viceversa. Solo lo que está en pantalla,
-no hay cambios adicionales
+
+Se corrige fallo en la programacion con respecto al ingreso de numero.
+Si el usuario ingresaba una letra o simbolo salia error y terminaba el programa.
+El historial no se elimina salvo que se borre el archivo txt.
+Se agregara en una futura actualizacion la opcion de borrar el historial desde la pantalla principal
